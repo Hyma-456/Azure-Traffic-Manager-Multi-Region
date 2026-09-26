@@ -1,0 +1,3 @@
+# Abstract
+
+The Azure Traffic Manager Multi-Region Routing project aims to improve web application availability using DNS-based traffic routing. The application is deployed in two different Azure regions using Azure App Service. Azure Traffic Manager directs users to available application endpoints and monitors their health using HTTP health probes. If one regional endpoint becomes unavailable, Traffic Manager stops returning it in DNS responses and directs new DNS resolutions toward a healthy endpoint according to the configured routing method. The project also studies the impact of DNS TTL caching and health-probe configuration on failover time.
